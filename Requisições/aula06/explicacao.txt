@@ -1,0 +1,2 @@
+fetch trabalha com assincronismo, ou seja, podemos executar as linhas posteriores enquanto a promise ainda não
+retornou nada. Ao contrário do async await, que o código trava enquanto a requisição não tem resposta
