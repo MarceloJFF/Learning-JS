@@ -1,7 +1,9 @@
+//static
 class Person{
     _firstName
     _lastName
     _age
+    static hands = 2; //variável statica podemos acessar ela sem precisar instanciar a classe
     constructor(firstName, lastname, age) {
         this._firstName=firstName
         this._lastName = lastname
@@ -25,6 +27,10 @@ class Person{
     get age(){
         return this._age;
     }
+
+    static sayHello(){
+        console.log("Hello")
+    }
 }
 class Student extends Person{
     _matricula
@@ -41,3 +47,8 @@ class Student extends Person{
 let estudante = new Student("Marcelo","Jhones",24, "1828282", 8)
 console.log(estudante.age) // quando colocamos dessa maneira ele acessa o método get
 console.log(estudante.fullName)
+
+console.log(Student.hands)
+console.log(Student.sayHello())
+
+//factory functions são funções que criam objetos literais js
